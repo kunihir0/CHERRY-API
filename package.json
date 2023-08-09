@@ -1,0 +1,40 @@
+{
+  "name": "cherry-api",
+  "version": "1.0.0",
+  "description": "🌸 is a REST api server for CHERRY front end",
+  "homepage": "https://github.com/kunihir0",
+  "private": true,
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "tsc --init",
+    "postinstall": "pnpx typesync && pnpm exec husky install",
+    "build": "tsc -p tsconfig.json",
+    "start": "node build/index.js",
+    "dev": "ts-node-dev ./src/index.ts | pnpm exec pino-pretty --colorize"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "agpl",
+  "dependencies": {
+    "fastify": "^4.21.0",
+    "mongodb": "^5.7.0",
+    "pino": "^8.15.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.17"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.9",
+    "git-format-staged": "^3.0.0",
+    "husky": "^8.0.0",
+    "pino-pretty": "^10.2.0",
+    "prettier": "3.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6"
+  },
+  "engines": {
+    "node": ">=20",
+    "pnpm": ">=8.6"
+  },
+  "engineStrict": true
+}

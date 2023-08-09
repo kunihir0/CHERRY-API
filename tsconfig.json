@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "lib": [ "ES2022" ],
+    "target": "ES2022",                                  /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "module": "commonjs",                                /* Specify what module code is generated. */
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+    "allowSyntheticDefaultImports": true,
+    "incremental": true,
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "rootDir": "./src",
+    "outDir": "./build",
+    "tsBuildInfoFile": "./build/.tsbuildinfo",
+    "baseUrl": "./src",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strict": false,                                      /* Enable all strict type-checking options. */
+    "strictNullChecks": true,
+    "skipLibCheck": true,                                /* Skip type checking all .d.ts files. */
+    "paths": {
+        "#lib/*": [ "./lib/*" ]
+    },
+    "typeRoots": ["node_modules/@types"]
+  },
+  "include": [ "src/**/*.ts" ],
+  "exclude": [ "node_modules", "build" ]
+}

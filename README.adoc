@@ -1,0 +1,19 @@
+= Running a 🌸 Cherry API Server
+:toc: macro
+:toc-title: Contents
+
+toc::[]
+
+== What is it?
+This is a api rest server for cherry front-end
+
+== Are there any prerequisites?
+* Mongodb replica set
+* pnpm>=8.6
+* node>=20
+
+[source,bash]
+----
+pnpm i
+pnpm run dev
+----
