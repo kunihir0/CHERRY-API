@@ -12,6 +12,8 @@ This is a api rest server for cherry front-end
 * pnpm>=8.6
 * node>=20
 
+Then go into src/config/data-source.ts and edit the options
+
 [source,bash]
 ----
 pnpm i
